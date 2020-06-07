@@ -1,0 +1,9 @@
+To solve this, we will follow these steps −
+
+create one array result of size amount + 1
+result[0] := 1
+n := size of coins array
+for i in range 0 to n – 1
+for j in range coins[i] to amount
+result[j] := result[j – coins[i]]
+return result[amount];
